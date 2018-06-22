@@ -1,0 +1,32 @@
+.form-container {
+  width: 80vw;
+  float: right;
+  text-align: center;
+}
+
+.title {
+  width: 40vw;
+  height: 5vh;
+  font-size: 1.5em;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: block;
+}
+
+.ingredients {
+  margin: auto;
+  width: 40vw;
+  height: 30vh;
+  display: block;
+  resize: none;
+  font-size: 1.5em;
+}
+
+.submit-button {
+  width: 20vw;
+  background-color: crimson;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 1em;
+}

@@ -1,0 +1,29 @@
+.sidebar-container {
+  background-color: floralwhite;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 20vw;
+  height: 100vh;
+}
+.nav-button:hover {
+  transform: scale(1.2);
+}
+
+.nav-button {
+  transition: all .5s;
+  margin: 5%;
+  position: relative;
+  font-size: inherit;
+  font-weight: 900;
+  box-shadow: 0 10px crimson;
+  text-transform: uppercase;
+  border: none;
+  width: 25%;
+  background-color: inherit;
+}
+
+.nav-button:disable {
+  font-color: blue;
+}
+
