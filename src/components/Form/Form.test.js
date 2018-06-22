@@ -37,4 +37,22 @@ describe('Form tests', () => {
       expect(mockPropFunc).toHaveBeenCalledWith(expectedPropArguments);
     });
   });
+  describe('Form UI tests', () => {
+    test('Form should render correct form inputs', () =>  {
+      const renderedForm = shallow(<Form />);
+      const expectedFormLength = 1;
+      const actualFormLength = renderedForm.find('form').length;
+      
+      const expectedInputLength = 2
+      const actualInputLength = renderedForm.find('[type="text"]').length;
+
+      const expectedTextAreaLength = 1
+      const expectedSubmitButtonLength = 1;
+      const actualSubmitButtonLength = renderedForm.find('[type="submit"]').length;
+
+      expect(actualFormLength).toBe(expectedFormLength);
+      expect(actualInputLength).toBe(expectedInputLength);
+      expect(actualSubmitButtonLength).toBe(expectedSubmitButtonLength);
+    });
+  });
 });

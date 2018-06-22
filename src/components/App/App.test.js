@@ -48,4 +48,4 @@ describe('App tests', () => {
       expect(renderedApp.state('recipes')).toEqual(expectation)
     });
   });
-})
+});
